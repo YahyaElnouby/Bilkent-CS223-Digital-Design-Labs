@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../twoBitSub.srcs/sources_1/new/twoBitSub.sv" \
+"../../../../twoBitSub.srcs/sim_1/new/testBenchSub.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

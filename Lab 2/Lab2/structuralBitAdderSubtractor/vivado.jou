@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 22 20:10:38 2019
+# Process ID: 2368
+# Current directory: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6048 E:\University\Year 2\Digital Design CS223\Lab\Lab 2\Lab2\structuralBitAdderSubtractor\structuralBitAdder.xpr
+# Log file: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor/vivado.log
+# Journal file: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor/structuralBitAdder.xpr}
+update_compile_order -fileset sources_1

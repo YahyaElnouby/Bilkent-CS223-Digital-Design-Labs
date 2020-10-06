@@ -1,0 +1,1 @@
+-wto "1583328d21ac4deabd9716505b098edd" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "StepMotorState_tb_behav" "xil_defaultlib.StepMotorState_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

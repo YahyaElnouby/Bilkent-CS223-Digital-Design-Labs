@@ -1,0 +1,12 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoProjects/Lab5/Lab5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sim_1/new/masterSlave_tb.sv,1575927860,systemVerilog,,,,masterSlave_tb,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/Seven_Seg.sv,1575921052,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/counterUp.sv,,Seven_Seg,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/counterUp.sv,1575923515,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/masterReg.sv,,counterUp,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/masterReg.sv,1575924925,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/masterSlave.sv,,masterReg,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/masterSlave.sv,1575924923,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/slaveReg.sv,,masterSlave,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/slaveReg.sv,1575924927,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/t20ms.sv,,slaveReg,,,,,,,,
+E:/VivadoProjects/Lab5/Lab5.srcs/sources_1/new/t20ms.sv,1575923510,systemVerilog,,E:/VivadoProjects/Lab5/Lab5.srcs/sim_1/new/masterSlave_tb.sv,,t20ms,,,,,,,,

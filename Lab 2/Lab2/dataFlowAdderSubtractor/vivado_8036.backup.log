@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 22 00:44:24 2019
+# Process ID: 8036
+# Current directory: E:/VivadoProjects/Lab2/fullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9768 E:\VivadoProjects\Lab2\fullAdder\fullAdder.xpr
+# Log file: E:/VivadoProjects/Lab2/fullAdder/vivado.log
+# Journal file: E:/VivadoProjects/Lab2/fullAdder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VivadoProjects/Lab2/fullAdder/fullAdder.xpr
+INFO: [Project 1-313] Project file moved from 'E:/VivadoProjects/fullAdder' since last save.
+WARNING: [Project 1-312] File not found as 'E:/VivadoProjects/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'E:/VivadoProjects/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+WARNING: [Project 1-312] File not found as 'E:/VivadoProjects/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 779.008 ; gain = 132.645
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 00:51:16 2019...

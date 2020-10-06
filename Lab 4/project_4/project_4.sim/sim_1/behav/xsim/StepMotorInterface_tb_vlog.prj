@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../project_4.srcs/sources_1/new/ClkDiv.sv" \
+"../../../../project_4.srcs/sources_1/new/SevSeg_4digit.sv" \
+"../../../../project_4.srcs/sources_1/new/StepMotorInterface.sv" \
+"../../../../project_4.srcs/sources_1/new/StepMotorState.sv" \
+"../../../../project_4.srcs/sim_1/new/StepMotorInterface_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

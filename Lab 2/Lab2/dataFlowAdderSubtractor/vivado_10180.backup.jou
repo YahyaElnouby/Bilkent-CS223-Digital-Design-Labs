@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 22 08:58:26 2019
+# Process ID: 10180
+# Current directory: E:/VivadoProjects/Lab2/fullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9404 E:\VivadoProjects\Lab2\fullAdder\fullAdder.xpr
+# Log file: E:/VivadoProjects/Lab2/fullAdder/vivado.log
+# Journal file: E:/VivadoProjects/Lab2/fullAdder\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project E:/VivadoProjects/Lab2/fullAdder/fullAdder.xpr
+uupdate_compile_order -fileset sources_1
+set_property top testBenchFullAdder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+source testBenchFullAdder_tb.tcl
+update_compile_order -fileset sim_1
+set_property top testBenchFullSubtractor [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source testBenchFullSubtractor.tcl
+close_sim

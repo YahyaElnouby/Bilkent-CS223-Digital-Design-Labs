@@ -1,0 +1,18 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoProjects/Lab03/Lab03.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/decoder2to4DataFlow_tb.sv,1572900130,systemVerilog,,,,decoder2to4DataFlow_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/decoder2to4_tb.sv,1572779403,systemVerilog,,,,decoder2to4_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/functionMux_tb.sv,1572795670,systemVerilog,,,,functionMux_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/multiplexer4_tb.sv,1572776808,systemVerilog,,,,multiplexer4_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/multiplixer8_tb.sv,1572788774,systemVerilog,,,,multiplixer8_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/mux4DataFlow_tb.sv,1572799518,systemVerilog,,,,mux4DataFlow_tb,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv,1572779048,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/functionMux.sv,,decoder2to4,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4DataFlow.sv,1572804877,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/decoder2to4DataFlow_tb.sv,,decoder2to4DataFlow,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/functionMux.sv,1572804349,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv,,functionMux,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv,1572777065,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv,,multiplexer2,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv,1572778566,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv,,multiplexer4,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4DataFlow.sv,1572799685,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/mux4DataFlow_tb.sv,,multiplexer4DataFlow,,,,,,,,
+E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv,1572787723,systemVerilog,,E:/VivadoProjects/Lab03/Lab03.srcs/sim_1/new/multiplixer8_tb.sv,,multiplexer8,,,,,,,,

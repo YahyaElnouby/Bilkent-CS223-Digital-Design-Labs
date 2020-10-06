@@ -1,0 +1,307 @@
+
+*** Running vivado
+    with args -log functionMux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source functionMux.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source functionMux.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 355.289 ; gain = 55.527
+Command: synth_design -top functionMux -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11324 
+WARNING: [Synth 8-2611] redeclaration of ansi port z0 is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port z1 is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port z2 is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+WARNING: [Synth 8-2611] redeclaration of ansi port z3 is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+WARNING: [Synth 8-976] z0 has already been declared [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+WARNING: [Synth 8-2654] second declaration of z0 ignored [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:27]
+INFO: [Synth 8-994] z0 is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:25]
+INFO: [Synth 8-994] z1 is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:25]
+INFO: [Synth 8-994] z2 is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:25]
+INFO: [Synth 8-994] z3 is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:25]
+WARNING: [Synth 8-2611] redeclaration of ansi port d is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:24]
+WARNING: [Synth 8-976] d has already been declared [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:24]
+WARNING: [Synth 8-2654] second declaration of d ignored [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:24]
+INFO: [Synth 8-994] d is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:23]
+WARNING: [Synth 8-2611] redeclaration of ansi port y is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:24]
+WARNING: [Synth 8-976] y has already been declared [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:24]
+WARNING: [Synth 8-2654] second declaration of y ignored [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:24]
+INFO: [Synth 8-994] y is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:22]
+WARNING: [Synth 8-2611] redeclaration of ansi port y is not allowed [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:27]
+WARNING: [Synth 8-976] y has already been declared [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:27]
+WARNING: [Synth 8-2654] second declaration of y ignored [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:27]
+INFO: [Synth 8-994] y is declared here [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 797.520 ; gain = 182.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'functionMux' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/functionMux.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder2to4' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2to4' (1#1) [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplexer8' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'multiplexer4' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'multiplexer2' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexer2' (2#1) [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexer4' (3#1) [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer4.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'multiplexer8' (4#1) [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/multiplexer8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'functionMux' (5#1) [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/functionMux.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 834.215 ; gain = 219.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 834.215 ; gain = 219.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 834.215 ; gain = 219.484
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/decoder2to4Basys.xdc]
+Finished Parsing XDC File [E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/decoder2to4Basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/decoder2to4Basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/functionMux_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/functionMux_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 957.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 957.113 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'z0_reg' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:33]
+WARNING: [Synth 8-327] inferring latch for variable 'z1_reg' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:33]
+WARNING: [Synth 8-327] inferring latch for variable 'z2_reg' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:34]
+WARNING: [Synth 8-327] inferring latch for variable 'z3_reg' [E:/VivadoProjects/Lab03/Lab03.srcs/sources_1/new/decoder2to4.sv:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decoder2to4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module multiplexer2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (decoder/z0_reg) is unused and will be removed from module functionMux.
+WARNING: [Synth 8-3332] Sequential element (decoder/z1_reg) is unused and will be removed from module functionMux.
+WARNING: [Synth 8-3332] Sequential element (decoder/z2_reg) is unused and will be removed from module functionMux.
+WARNING: [Synth 8-3332] Sequential element (decoder/z3_reg) is unused and will be removed from module functionMux.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 957.113 ; gain = 342.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 960.223 ; gain = 345.492
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     1|
+|2     |IBUF |     4|
+|3     |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |     6|
+|2     |  m0     |multiplexer8 |     1|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 975.035 ; gain = 237.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 975.035 ; gain = 360.305
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 991.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 991.781 ; gain = 636.492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 991.781 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/Lab03/Lab03.runs/synth_1/functionMux.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file functionMux_utilization_synth.rpt -pb functionMux_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 09:09:31 2019...

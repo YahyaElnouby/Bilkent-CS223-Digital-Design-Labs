@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoProjects/Lab2/fullAdder/fullAdder.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sim_1/new/testBenchFullAdder_tb.sv,1571682776,systemVerilog,,,,testBenchFullAdder_tb,,,,,,,,
+E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sim_1/new/testBenchFullSubtractor.sv,1571685207,systemVerilog,,,,testBenchFullSubtractor,,,,,,,,
+E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sources_1/new/1BitFullAdder.sv,1571682368,systemVerilog,,E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sim_1/new/testBenchFullAdder_tb.sv,,BitFullAdder,,,,,,,,
+E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sources_1/new/bitFullSubtractor.sv,1571684186,systemVerilog,,E:/VivadoProjects/Lab2/fullAdder/fullAdder.srcs/sim_1/new/testBenchFullSubtractor.sv,,bitFullSubtractor,,,,,,,,

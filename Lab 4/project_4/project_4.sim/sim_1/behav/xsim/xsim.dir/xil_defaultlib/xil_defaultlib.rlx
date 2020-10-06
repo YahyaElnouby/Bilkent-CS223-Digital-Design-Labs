@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoProjects/project_4/project_4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sim_1/new/ClockDivider_tb.sv,1574113307,systemVerilog,,,,ClockDivider_tb,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sim_1/new/StepMotorInterface_tb.sv,1574144156,systemVerilog,,,,StepMotorInterface_tb,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sim_1/new/StepMotorState_tb.sv,1574107196,systemVerilog,,,,StepMotorState_tb,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv,1574152757,systemVerilog,,E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/SevSeg_4digit.sv,,ClkDiv,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClockDivider.sv,1574155312,systemVerilog,,E:/VivadoProjects/project_4/project_4.srcs/sim_1/new/ClockDivider_tb.sv,,ClockDivider,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/SevSeg_4digit.sv,1574099119,systemVerilog,,E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv,,SevSeg_4digit,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv,1574155409,systemVerilog,,E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorState.sv,,StepMotorInterface,,,,,,,,
+E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorState.sv,1574154781,systemVerilog,,E:/VivadoProjects/project_4/project_4.srcs/sim_1/new/StepMotorInterface_tb.sv,,StepMotorState,,,,,,,,

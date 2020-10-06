@@ -1,0 +1,214 @@
+-------------------------------------------------------
+Timer Design
+-------------------------------------------------------
+`timescale 1ns / 1ps
+
+module t20ms(input logic reset, input logic clock, output reg clk2);
+
+//where timer should stop counting
+localparam limit = 20000000;
+//register to save the value of timer count up
+reg[24:0] countUp; 
+
+always @ (posedge clock or posedge reset)
+begin 
+    if (reset)
+     begin
+        countUp = 0;
+        clk2  = clk2;
+     end
+     
+     else if (countUp < limit)
+     begin
+        countUp++;
+        clk2 = clk2;
+     end
+     
+     else if (countUp >= limit)
+     begin 
+        countUp = 0;
+        clk2 = ~clk2;
+     end
+        
+  end      
+endmodule
+-------------------------------------------------
+Counter Design
+-------------------------------------------------
+`timescale 1ns / 1ps
+
+module counterUp(input logic reset, input logic clock, input logic limitP, output reg finalCount );
+
+//new clock to be used after time slowing
+   wire clk2 ;
+//where timer should stop counting
+    integer limit = limitP;
+//register to save the value of timer count up
+    reg[24:0] countUp; 
+
+t20ms t20ms (reset, clock,clk2);
+
+always @ (posedge reset or posedge clk2)
+begin 
+    if (reset)
+     begin
+        finalCount  = 0;
+        countUp = 0;
+     end
+     
+     else if(countUp < limit)
+     begin
+        finalCount = finalCount;
+        countUp++;
+     end
+     
+     else if(countUp >= limit)
+     begin
+        finalCount = ~finalCount;
+	countUp = 0;
+     end
+        
+  end      
+endmodule
+------------------------------------------------------
+Slave Register Design
+------------------------------------------------------
+`timescale 1ns / 1ps
+
+module slaveReg(input logic reset, input logic clock, output reg [7:0] countUp );
+
+//will be used as for the timeup flag of the counter
+wire finalCount;
+
+//counter for slave speed 500 ms
+counterUp count (reset, clock,50, finalCount);
+
+always @ (posedge finalCount or posedge reset)
+begin 
+    if (!reset)
+           begin 
+              countUp++;
+           end
+     else
+         begin
+            countUp = 0;
+         end
+        
+  end      
+endmodule
+----------------------------------------------------------------------------
+Master Register Design
+----------------------------------------------------------------------------
+`timescale 1ns / 1ps
+
+module masterReg(input logic reset, input logic clock, output reg [7:0] countUp );
+
+//will be used as for the timeup flag of the counter
+wire finalCount;
+
+//counter for master speed 1000ms
+counterUp count  (reset, clock, 25,finalCount);
+
+always @ (posedge finalCount or posedge reset)
+    begin 
+        if (!reset)
+             begin 
+             countUp++;   
+           end
+        else
+           begin
+             countUp = 0;
+            end
+    end
+endmodule
+---------------------------------------------------------------------------
+Master-Slave Design
+---------------------------------------------------------------------------
+`timescale 1ns / 1ps
+
+module masterSlave(input logic reset, input logic clock, input logic master, input logic slave, 
+input logic enableMaster, input logic enableSlave , output logic masterOut,output logic slaveOut, 
+output logic masterCout, output logic slaveCout,output a,b,c,d,e,f,g, dp,[3:0] an);
+
+    reg[7:0] hexaDisplay;    //register to store the count for the seven-segment display
+    
+    //slave register, clear, timeup flag
+    reg clearSlave;               //to reset slave count to zero 
+    wire[7:0] slaveRegOut;         //store the count value of slave
+    wire finalCountSlave;     //timeup flag of slave
+    
+    //master register, clear, timeup flag
+    reg clearMaster;           //to reset master count to zero
+    wire finalCountMaster;  //timeup flag of master
+    wire [7:0] masterRegOut;     //store the count value of master
+    
+    
+   //slave counter and slave register to save the value of the slave counter independently
+       slaveReg slaveReg1(clearSlave,clock,slaveRegOut);
+       counterUp slaveCounter (clearSlave,clock,50,finalCountSlave);
+    
+    
+  //master counter and master register to save the value of the master counter independently
+      masterReg masterReg1(clearMaster,clock,masterRegOut);
+      counterUp masterCounter (clearMaster,clock,25,finalCountMaster);
+      
+    
+    //Output States when certain inputs are changed
+    always @(posedge clock or posedge reset)
+    begin
+       
+           if( (!master && !slave && !enableMaster && !enableSlave) || (reset))
+                 begin
+                       clearMaster = 1; masterOut = 0;  masterCout = 0;
+                       clearSlave = 1; slaveCout = 0; slaveOut = 0; 
+                       hexaDisplay = 0;
+                 end
+            
+             else if(enableMaster && !slave || master)
+                 begin
+                    clearSlave = 1;slaveOut =0; slaveCout = 0;
+		    clearMaster= 0; masterOut = 1; masterCout = finalCountMaster;
+                    hexaDisplay = masterRegOut;
+              
+                 end
+         
+                else if(!master && slave || !master && !enableMaster && enableSlave)
+                            begin
+                               clearMaster = 1; masterOut= 0; masterCout = 0;
+                               clearSlave = 0; slaveOut = 1; slaveCout = finalCountSlave;
+                               hexaDisplay = slaveRegOut;
+                        end                     
+            end
+       Seven_Seg sev(clock, hexaDisplay[3:0], hexaDisplay[7:4],0,0 ,a,b,c,d,e,f,g,dp,an);
+endmodule
+--------------------------------------------------------------------------------
+TestBench MasterSlave Design
+--------------------------------------------------------------------------------
+module masterSlave_tb();
+
+reg clock, reset, master, enableMaster, slave, enableSlave;
+wire masterOut, masterCout, slaveOut,slaveCout, dp, an, a,b,c,d,e,f,g;
+
+masterSlave uut (.reset(reset),.clock(clock), .master(master), .enableMaster(enableMaster), .slave(slave), .enableSlave(enableSlave));
+initial begin
+
+reset <=1; #1000;
+
+reset<= 0; enableMaster <= 1; #1000;
+
+reset <= 0; master <= 0; slave <= 0; enableMaster <=0; enableSlave <= 0; #1000;
+
+reset<= 0; master <=1; #1000;
+
+reset<= 0; master = 0; enableMaster =0; slave =1; #1000;
+
+reset<= 0; master = 0; enableMaster =0; enableSlave =1; #1000;
+
+
+end
+  always
+    begin 
+       clock = 0; #10000;
+       clock = 1; #10000;
+    end
+ endmodule

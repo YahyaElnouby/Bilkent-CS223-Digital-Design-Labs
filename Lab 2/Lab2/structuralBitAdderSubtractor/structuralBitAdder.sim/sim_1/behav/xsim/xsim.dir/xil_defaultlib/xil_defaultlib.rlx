@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sim_1/new/testBenchFullAdder_tb.sv,1571687396,systemVerilog,,,,testBenchFullAdder_tb,,,,,,,,
+E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sim_1/new/testBenchSub_tb.sv,1571724881,systemVerilog,,,,testBenchSub_tb,,,,,,,,
+E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sources_1/new/fullAdderS.sv,1571687295,systemVerilog,,E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sim_1/new/testBenchFullAdder_tb.sv,,fullAdderS,,,,,,,,
+E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sources_1/new/fullSubtractorS.sv,1571686148,systemVerilog,,E:/VivadoProjects/Lab2/structuralBitAdder/structuralBitAdder.srcs/sim_1/new/testBenchSub_tb.sv,,fullSubtractorS,,,,,,,,

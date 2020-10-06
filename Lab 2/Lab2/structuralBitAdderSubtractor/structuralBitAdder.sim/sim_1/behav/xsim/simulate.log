@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+                   0 a=x,b=x,bin=x, d=x, bout=x
+                 110 a=0,b=0,bin=0, d=0, bout=0
+                 120 a=0,b=0,bin=1, d=1, bout=1
+                 130 a=0,b=1,bin=0, d=1, bout=1
+                 140 a=0,b=1,bin=1, d=0, bout=1
+                 150 a=1,b=0,bin=0, d=1, bout=0
+                 160 a=1,b=0,bin=1, d=0, bout=0
+                 170 a=1,b=1,bin=0, d=0, bout=0
+                 180 a=1,b=1,bin=1, d=1, bout=1

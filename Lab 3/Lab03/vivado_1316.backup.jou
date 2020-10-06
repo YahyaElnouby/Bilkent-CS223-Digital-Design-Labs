@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Nov  4 22:57:24 2019
+# Process ID: 1316
+# Current directory: E:/VivadoProjects/Lab03
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2940 E:\VivadoProjects\Lab03\Lab03.xpr
+# Log file: E:/VivadoProjects/Lab03/vivado.log
+# Journal file: E:/VivadoProjects/Lab03\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VivadoProjects/Lab03/Lab03.xpr
+update_compile_order -fileset sources_1
+file mkdir E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1
+file mkdir E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new
+close [ open E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/decoder2to4Basys.xdc w ]
+add_files -fileset constrs_1 E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/decoder2to4Basys.xdc
+close [ open E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/functionMuxBasys.xdc w ]
+add_files -fileset constrs_1 E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/functionMuxBasys.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top functionMux [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/functionMuxBasys.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 E:/VivadoProjects/Lab03/Lab03.srcs/constrs_1/new/functionMuxBasys.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top decoder2to4DataFlow [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source decoder2to4DataFlow_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/VivadoProjects/Lab03/Lab03.runs/impl_1/decoder2to4DataFlow.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/VivadoProjects/Lab03/Lab03.runs/impl_1/decoder2to4DataFlow.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top functionMux [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top functionMux_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source functionMux_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/VivadoProjects/Lab03/Lab03.runs/impl_1/functionMux.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+close_sim

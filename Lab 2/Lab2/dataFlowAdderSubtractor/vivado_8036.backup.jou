@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 22 00:44:24 2019
+# Process ID: 8036
+# Current directory: E:/VivadoProjects/Lab2/fullAdder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9768 E:\VivadoProjects\Lab2\fullAdder\fullAdder.xpr
+# Log file: E:/VivadoProjects/Lab2/fullAdder/vivado.log
+# Journal file: E:/VivadoProjects/Lab2/fullAdder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VivadoProjects/Lab2/fullAdder/fullAdder.xpr
+update_compile_order -fileset sources_1

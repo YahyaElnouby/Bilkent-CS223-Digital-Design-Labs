@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 1583328d21ac4deabd9716505b098edd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StepMotorInterface_tb_behav xil_defaultlib.StepMotorInterface_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'in0' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:57]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv" Line 1. Module ClkDiv doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.StepMotorState
+Compiling module xil_defaultlib.ClkDiv
+Compiling module xil_defaultlib.SevSeg_4digit
+Compiling module xil_defaultlib.StepMotorInterface
+Compiling module xil_defaultlib.StepMotorInterface_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StepMotorInterface_tb_behav

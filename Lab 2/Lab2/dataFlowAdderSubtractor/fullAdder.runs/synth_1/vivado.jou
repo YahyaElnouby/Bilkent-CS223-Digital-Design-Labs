@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 21 22:15:09 2019
+# Process ID: 4976
+# Current directory: E:/VivadoProjects/fullAdder/fullAdder.runs/synth_1
+# Command line: vivado.exe -log bitFullSubtractor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bitFullSubtractor.tcl
+# Log file: E:/VivadoProjects/fullAdder/fullAdder.runs/synth_1/bitFullSubtractor.vds
+# Journal file: E:/VivadoProjects/fullAdder/fullAdder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source bitFullSubtractor.tcl -notrace

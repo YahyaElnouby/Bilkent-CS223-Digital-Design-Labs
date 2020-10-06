@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 22 09:15:47 2019
+# Process ID: 1460
+# Current directory: E:/VivadoProjects/Lab2/twoBitAdder_Subtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3524 E:\VivadoProjects\Lab2\twoBitAdder_Subtractor\twoBitAdder_Subtractor.xpr
+# Log file: E:/VivadoProjects/Lab2/twoBitAdder_Subtractor/vivado.log
+# Journal file: E:/VivadoProjects/Lab2/twoBitAdder_Subtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/VivadoProjects/Lab2/twoBitAdder_Subtractor/twoBitAdder_Subtractor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source testFullAdder.tcl
+close_sim

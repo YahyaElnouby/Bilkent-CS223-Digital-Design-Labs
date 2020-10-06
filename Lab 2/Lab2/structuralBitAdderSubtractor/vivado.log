@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 22 20:10:38 2019
+# Process ID: 2368
+# Current directory: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6048 E:\University\Year 2\Digital Design CS223\Lab\Lab 2\Lab2\structuralBitAdderSubtractor\structuralBitAdder.xpr
+# Log file: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor/vivado.log
+# Journal file: E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor/structuralBitAdder.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/University/Year 2/Digital Design CS223/Lab/Lab 2/Lab2/structuralBitAdderSubtractor'
+INFO: [Project 1-313] Project file moved from 'E:/VivadoProjects/Lab2/structuralBitAdder' since last save.
+WARNING: [Project 1-312] File not found as 'E:/University/Year 2/Digital Design CS223/Lab/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'E:/University/Year 2/Digital Design CS223/Lab/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+WARNING: [Project 1-312] File not found as 'E:/University/Year 2/Digital Design CS223/Lab/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc'; using path 'E:/University/Year 2/Digital Design CS223/Lab/Basys Vivado/Basys3.xdc' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 799.352 ; gain = 150.551
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 22 20:14:39 2019...

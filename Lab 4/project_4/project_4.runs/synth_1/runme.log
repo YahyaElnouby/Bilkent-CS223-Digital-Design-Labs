@@ -1,0 +1,471 @@
+
+*** Running vivado
+    with args -log StepMotorInterface.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source StepMotorInterface.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source StepMotorInterface.tcl -notrace
+Command: synth_design -top StepMotorInterface -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5764 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 792.813 ; gain = 176.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'StepMotorInterface' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'StepMotorState' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorState.sv:3]
+INFO: [Synth 8-226] default block is never used [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorState.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'StepMotorState' (1#1) [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorState.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:1]
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:14]
+INFO: [Synth 8-4471] merging register 'delayed_delayed_y_reg' into 'delayed_y_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:32]
+WARNING: [Synth 8-6014] Unused sequential element delayed_delayed_y_reg was removed.  [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:32]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv' (2#1) [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SevSeg_4digit' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/SevSeg_4digit.sv:2]
+	Parameter N bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SevSeg_4digit' (3#1) [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/SevSeg_4digit.sv:2]
+WARNING: [Synth 8-689] width (32) of port connection 'in0' does not match port width (4) of module 'SevSeg_4digit' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in1' does not match port width (4) of module 'SevSeg_4digit' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in2' does not match port width (4) of module 'SevSeg_4digit' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:57]
+WARNING: [Synth 8-689] width (32) of port connection 'in3' does not match port width (4) of module 'SevSeg_4digit' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:57]
+INFO: [Synth 8-6155] done synthesizing module 'StepMotorInterface' (4#1) [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 856.254 ; gain = 240.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 856.254 ; gain = 240.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 856.254 ; gain = 240.211
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/VivadoProjects/project_4/project_4.srcs/constrs_1/new/Basys.xdc]
+Finished Parsing XDC File [E:/VivadoProjects/project_4/project_4.srcs/constrs_1/new/Basys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/VivadoProjects/project_4/project_4.srcs/constrs_1/new/Basys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/StepMotorInterface_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/StepMotorInterface_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 951.531 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 951.531 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'StepMotorState'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  State0 |                             0010 |                               00
+                  State3 |                             0001 |                               11
+                  State2 |                             0100 |                               10
+                  State1 |                             1000 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'StepMotorState'
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/ClkDiv.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ones_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:20]
+WARNING: [Synth 8-327] inferring latch for variable 'tens_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:21]
+WARNING: [Synth 8-327] inferring latch for variable 'hundreds_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:22]
+WARNING: [Synth 8-327] inferring latch for variable 'thousands_reg' [E:/VivadoProjects/project_4/project_4.srcs/sources_1/new/StepMotorInterface.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module StepMotorInterface 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module StepMotorState 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+Module ClkDiv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module SevSeg_4digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design StepMotorInterface has port dp driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div/delayed_y_reg )
+INFO: [Synth 8-3886] merging instance 'ones_reg[31]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[30]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[29]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[28]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[27]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[26]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[25]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[24]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[23]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[22]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[21]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[20]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[19]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[18]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[17]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[16]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[15]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[14]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[13]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[12]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[11]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[10]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[9]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[8]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[7]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[6]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[5]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[4]' (LDC) to 'ones_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[0]' (LDC) to 'ones_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tens_reg[0]' (LDCP) to 'tens_reg[2]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[0]' (LD) to 'hundreds_reg[2]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[1]' (LDC) to 'ones_reg[3]'
+INFO: [Synth 8-3886] merging instance 'tens_reg[1]' (LDC) to 'tens_reg[3]'
+INFO: [Synth 8-3886] merging instance 'thousands_reg[1]' (LDC) to 'thousands_reg[3]'
+INFO: [Synth 8-3886] merging instance 'ones_reg[2]' (LDC) to 'ones_reg[3]'
+INFO: [Synth 8-3886] merging instance 'thousands_reg[2]' (LDC) to 'thousands_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ones_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tens_reg[3] )
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[31]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[30]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[29]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[28]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[27]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[26]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[25]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[24]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[23]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[22]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[21]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[20]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[19]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[18]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[17]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[16]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[15]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[14]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[13]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[12]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[11]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[10]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[9]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[8]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[7]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[6]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[5]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hundreds_reg[4]' (LD) to 'hundreds_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\hundreds_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\thousands_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (ones_reg[3]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[31]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[30]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[29]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[28]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[27]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[26]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[25]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[24]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[23]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[22]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[21]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[20]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[19]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[18]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[17]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[16]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[15]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[14]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[13]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[12]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[11]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[10]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[9]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[8]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[7]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[6]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[5]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[4]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (tens_reg[3]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (hundreds_reg[3]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[31]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[30]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[29]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[28]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[27]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[26]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[25]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[24]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[23]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[22]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[21]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[20]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[19]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[18]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[17]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[16]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[15]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[14]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[13]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[12]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[11]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[10]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[9]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[8]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[7]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[6]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[5]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[4]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (thousands_reg[3]) is unused and will be removed from module StepMotorInterface.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 951.531 ; gain = 335.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (hundreds_reg[2]) is unused and will be removed from module StepMotorInterface.
+WARNING: [Synth 8-3332] Sequential element (hundreds_reg[1]) is unused and will be removed from module StepMotorInterface.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 961.090 ; gain = 345.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     5|
+|3     |LUT1   |     2|
+|4     |LUT2   |    13|
+|5     |LUT3   |     4|
+|6     |LUT4   |     1|
+|7     |LUT5   |     3|
+|8     |LUT6   |     5|
+|9     |FDRE   |    21|
+|10    |FDSE   |     1|
+|11    |LDC    |     1|
+|12    |LDCP   |     2|
+|13    |IBUF   |     7|
+|14    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+---------------+------+
+|      |Instance       |Module         |Cells |
++------+---------------+---------------+------+
+|1     |top            |               |    82|
+|2     |  div          |ClkDiv         |     4|
+|3     |  sevenDisplay |SevSeg_4digit  |    35|
+|4     |  sm           |StepMotorState |    12|
++------+---------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 975.906 ; gain = 264.586
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 975.906 ; gain = 359.863
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 991.195 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LDC => LDCE: 1 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+93 Infos, 74 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 991.195 ; gain = 634.965
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 991.195 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/VivadoProjects/project_4/project_4.runs/synth_1/StepMotorInterface.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file StepMotorInterface_utilization_synth.rpt -pb StepMotorInterface_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 12:31:14 2019...

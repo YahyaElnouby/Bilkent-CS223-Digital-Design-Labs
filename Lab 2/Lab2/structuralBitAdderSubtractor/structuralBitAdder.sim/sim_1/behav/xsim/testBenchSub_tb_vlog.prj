@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../structuralBitAdder.srcs/sources_1/new/fullSubtractorS.sv" \
+"../../../../structuralBitAdder.srcs/sim_1/new/testBenchSub_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
